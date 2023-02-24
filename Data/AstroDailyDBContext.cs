@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 #nullable disable
 
-namespace AstroDailyProject.testAstro
+namespace AstroDailyProject.Data
 {
     public partial class AstroDailyDBContext : DbContext
     {
@@ -73,7 +73,7 @@ namespace AstroDailyProject.testAstro
                 entity.ToTable("AstroProfile");
 
                 entity.Property(e => e.CustomerId)
-                    .HasMaxLength(1)
+                    .HasMaxLength(100)
                     .IsUnicode(false);
 
                 entity.HasOne(d => d.Aspect)
@@ -96,9 +96,7 @@ namespace AstroDailyProject.testAstro
             {
                 entity.ToTable("Explanation");
 
-                entity.Property(e => e.Description)
-                    .HasMaxLength(1)
-                    .IsUnicode(false);
+                entity.Property(e => e.Description).HasMaxLength(2000);
 
                 entity.HasOne(d => d.House)
                     .WithMany(p => p.Explanations)
@@ -122,9 +120,7 @@ namespace AstroDailyProject.testAstro
 
                 entity.Property(e => e.Date).HasColumnType("datetime");
 
-                entity.Property(e => e.Description)
-                    .HasMaxLength(1)
-                    .IsUnicode(false);
+                entity.Property(e => e.Description).HasMaxLength(2000);
 
                 entity.HasOne(d => d.Aspect)
                     .WithMany(p => p.Horoscopes)
@@ -141,115 +137,90 @@ namespace AstroDailyProject.testAstro
             {
                 entity.ToTable("House");
 
-                entity.Property(e => e.Description)
-                    .HasMaxLength(1)
-                    .IsUnicode(false);
+                entity.Property(e => e.Description).HasMaxLength(2000);
 
-                entity.Property(e => e.Name)
-                    .HasMaxLength(1)
-                    .IsUnicode(false);
+                entity.Property(e => e.Name).HasMaxLength(255);
             });
 
             modelBuilder.Entity<LifeAttribute>(entity =>
             {
                 entity.ToTable("LifeAttribute");
 
-                entity.Property(e => e.Routine)
-                    .HasMaxLength(1)
-                    .IsUnicode(false);
+                entity.Property(e => e.Routine).HasMaxLength(2000);
 
-                entity.Property(e => e.Self)
-                    .HasMaxLength(1)
-                    .IsUnicode(false);
+                entity.Property(e => e.Self).HasMaxLength(2000);
 
-                entity.Property(e => e.SexLove)
-                    .HasMaxLength(1)
-                    .IsUnicode(false);
+                entity.Property(e => e.SexLove).HasMaxLength(2000);
 
-                entity.Property(e => e.SocialLife)
-                    .HasMaxLength(1)
-                    .IsUnicode(false);
+                entity.Property(e => e.SocialLife).HasMaxLength(2000);
 
-                entity.Property(e => e.Spirituality)
-                    .HasMaxLength(1)
-                    .IsUnicode(false);
+                entity.Property(e => e.Spirituality).HasMaxLength(2000);
 
-                entity.Property(e => e.ThinkingCreativity)
-                    .HasMaxLength(1)
-                    .IsUnicode(false);
+                entity.Property(e => e.ThinkingCreativity).HasMaxLength(2000);
             });
 
             modelBuilder.Entity<Planet>(entity =>
             {
                 entity.ToTable("Planet");
 
-                entity.Property(e => e.Description)
-                    .HasMaxLength(1)
-                    .IsUnicode(false);
+                entity.Property(e => e.Description).HasMaxLength(2000);
 
-                entity.Property(e => e.Name)
-                    .HasMaxLength(1)
-                    .IsUnicode(false);
+                entity.Property(e => e.Name).HasMaxLength(255);
             });
 
             modelBuilder.Entity<Quote>(entity =>
             {
                 entity.ToTable("Quote");
 
-                entity.Property(e => e.Script)
-                    .HasMaxLength(1)
-                    .IsUnicode(false);
+                entity.Property(e => e.Script).HasMaxLength(2000);
             });
 
             modelBuilder.Entity<Role>(entity =>
             {
                 entity.ToTable("Role");
 
-                entity.Property(e => e.Name)
-                    .HasMaxLength(1)
-                    .IsUnicode(false);
+                entity.Property(e => e.Name).HasMaxLength(255);
             });
 
             modelBuilder.Entity<User>(entity =>
             {
                 entity.ToTable("User");
 
-                entity.HasIndex(e => e.Username, "UQ__User__536C85E47BA45898")
+                entity.HasIndex(e => e.Username, "UQ__User__536C85E40B37D7FE")
                     .IsUnique();
 
-                entity.HasIndex(e => e.Phone, "UQ__User__5C7E359E11932EBF")
+                entity.HasIndex(e => e.Phone, "UQ__User__5C7E359EA0F3204F")
                     .IsUnique();
 
-                entity.HasIndex(e => e.Email, "UQ__User__A9D105343275A583")
+                entity.HasIndex(e => e.Email, "UQ__User__A9D1053452729A1F")
                     .IsUnique();
 
                 entity.Property(e => e.Id)
-                    .HasMaxLength(1)
+                    .HasMaxLength(100)
                     .IsUnicode(false);
 
                 entity.Property(e => e.BirthPlace)
-                    .HasMaxLength(1)
+                    .HasMaxLength(255)
                     .IsUnicode(false);
 
-                entity.Property(e => e.Email)
-                    .HasMaxLength(1)
-                    .IsUnicode(false);
+                entity.Property(e => e.Email).HasMaxLength(255);
 
-                entity.Property(e => e.FirstName).HasMaxLength(1);
+                entity.Property(e => e.FirstName).HasMaxLength(255);
 
-                entity.Property(e => e.LastName).HasMaxLength(1);
+                entity.Property(e => e.LastName).HasMaxLength(255);
 
-                entity.Property(e => e.Password)
-                    .HasMaxLength(1)
-                    .IsUnicode(false);
+                entity.Property(e => e.Otp)
+                    .HasMaxLength(6)
+                    .IsUnicode(false)
+                    .HasColumnName("OTP");
+
+                entity.Property(e => e.Password).HasMaxLength(255);
 
                 entity.Property(e => e.Phone)
-                    .HasMaxLength(1)
+                    .HasMaxLength(15)
                     .IsUnicode(false);
 
-                entity.Property(e => e.Username)
-                    .HasMaxLength(1)
-                    .IsUnicode(false);
+                entity.Property(e => e.Username).HasMaxLength(255);
 
                 entity.HasOne(d => d.Role)
                     .WithMany(p => p.Users)
@@ -261,13 +232,9 @@ namespace AstroDailyProject.testAstro
             {
                 entity.ToTable("Zodiac");
 
-                entity.Property(e => e.Description)
-                    .HasMaxLength(1)
-                    .IsUnicode(false);
+                entity.Property(e => e.Description).HasMaxLength(2000);
 
-                entity.Property(e => e.Name)
-                    .HasMaxLength(1)
-                    .IsUnicode(false);
+                entity.Property(e => e.Name).HasMaxLength(255);
             });
 
             OnModelCreatingPartial(modelBuilder);

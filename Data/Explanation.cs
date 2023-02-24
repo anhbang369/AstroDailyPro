@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 #nullable disable
 
-namespace AstroDailyProject.testAstro
+namespace AstroDailyProject.Data
 {
     public partial class Explanation
     {

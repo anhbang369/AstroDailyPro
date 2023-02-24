@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 #nullable disable
 
-namespace AstroDailyProject.testAstro
+namespace AstroDailyProject.Data
 {
     public partial class AstroProfile
     {
@@ -12,7 +12,7 @@ namespace AstroDailyProject.testAstro
         public int? ExplanationId { get; set; }
         public int? AspectId { get; set; }
         public int? Comparatible { get; set; }
-        public int? Status { get; set; }
+        public bool? Status { get; set; }
 
         public virtual Aspect Aspect { get; set; }
         public virtual User Customer { get; set; }
