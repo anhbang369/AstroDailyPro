@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "31J7UW8qaQ+Uh5u8Jl5ZXV2CS1ENMxri2E3BT62Pysu/oI/6VIXnhZEeRj/1wJdf/70RYY3YIqNmlGCUwWlUTg==",
+  "dgSpecHash": "a2S8FCfiDalT9CBTbh4ltMqalwrL0CQY2As6U7ia/1Hqwx8CQLsUGFe8Bp4cV5Jk+rGbDQLHxAOTJRtOYr/XHw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\84348\\source\\repos\\AstroDailyProject\\AstroDailyProject\\AstroDailyProject.csproj",
+  "projectFilePath": "C:\\Users\\84348\\Source\\Repos\\AstroDailyPro\\AstroDailyProject\\AstroDailyProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\84348\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\84348\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

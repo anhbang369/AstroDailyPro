@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\84348\\source\\repos\\AstroDailyProject\\AstroDailyProject\\AstroDailyProject.csproj": {}
+    "C:\\Users\\84348\\Source\\Repos\\AstroDailyPro\\AstroDailyProject\\AstroDailyProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\84348\\source\\repos\\AstroDailyProject\\AstroDailyProject\\AstroDailyProject.csproj": {
+    "C:\\Users\\84348\\Source\\Repos\\AstroDailyPro\\AstroDailyProject\\AstroDailyProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\84348\\source\\repos\\AstroDailyProject\\AstroDailyProject\\AstroDailyProject.csproj",
+        "projectUniqueName": "C:\\Users\\84348\\Source\\Repos\\AstroDailyPro\\AstroDailyProject\\AstroDailyProject.csproj",
         "projectName": "AstroDailyProject",
-        "projectPath": "C:\\Users\\84348\\source\\repos\\AstroDailyProject\\AstroDailyProject\\AstroDailyProject.csproj",
+        "projectPath": "C:\\Users\\84348\\Source\\Repos\\AstroDailyPro\\AstroDailyProject\\AstroDailyProject.csproj",
         "packagesPath": "C:\\Users\\84348\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\84348\\source\\repos\\AstroDailyProject\\AstroDailyProject\\obj\\",
+        "outputPath": "C:\\Users\\84348\\Source\\Repos\\AstroDailyPro\\AstroDailyProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\84348\\AppData\\Roaming\\NuGet\\NuGet.Config",

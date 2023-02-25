@@ -3,11 +3,11 @@ using System.Collections.Generic;
 
 #nullable disable
 
-namespace AstroDailyProject.testAstro
+namespace AstroDailyProject.Data
 {
-    public partial class House
+    public partial class Zodiac
     {
-        public House()
+        public Zodiac()
         {
             Explanations = new HashSet<Explanation>();
         }

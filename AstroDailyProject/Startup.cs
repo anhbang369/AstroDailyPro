@@ -1,6 +1,6 @@
 using AstroDailyProject.BE_Bang;
-using AstroDailyProject.testAstro;
 using Microsoft.AspNetCore.Builder;
+using AstroDailyProject.Data;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
