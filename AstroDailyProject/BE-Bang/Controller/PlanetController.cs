@@ -79,7 +79,7 @@ namespace AstroDailyProject.BE_Bang.Controller
         [HttpPut("{name}/update")]
         public IActionResult UpdatePlanet(string name,PlanetModel planetModel)
         {
-            var planet = _context.Planets.SingleOrDefault(lo => lo.Name == name);
+            var planet = _context.Planets.SingleOrDefault(lo => lo.Name == name && lo.Status==1);
             if (name != planet.Name.ToString()) { return BadRequest(); }
             if (planet != null)
             {
