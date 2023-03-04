@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\84348\\Source\\Repos\\anhbang369\\AstroDailyPro\\AstroDailyProject\\AstroDailyProject.csproj": {}
+    "D:\\AstroDailyPro\\AstroDailyProject\\AstroDailyProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\84348\\Source\\Repos\\anhbang369\\AstroDailyPro\\AstroDailyProject\\AstroDailyProject.csproj": {
+    "D:\\AstroDailyPro\\AstroDailyProject\\AstroDailyProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\84348\\Source\\Repos\\anhbang369\\AstroDailyPro\\AstroDailyProject\\AstroDailyProject.csproj",
+        "projectUniqueName": "D:\\AstroDailyPro\\AstroDailyProject\\AstroDailyProject.csproj",
         "projectName": "AstroDailyProject",
-        "projectPath": "C:\\Users\\84348\\Source\\Repos\\anhbang369\\AstroDailyPro\\AstroDailyProject\\AstroDailyProject.csproj",
-        "packagesPath": "C:\\Users\\84348\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\84348\\Source\\Repos\\anhbang369\\AstroDailyPro\\AstroDailyProject\\obj\\",
+        "projectPath": "D:\\AstroDailyPro\\AstroDailyProject\\AstroDailyProject.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "D:\\AstroDailyPro\\AstroDailyProject\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\84348\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -71,7 +75,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -83,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
